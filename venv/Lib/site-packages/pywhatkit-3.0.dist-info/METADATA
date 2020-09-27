@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: pywhatkit
+Version: 3.0
+Summary: pywhatkit is a Python library for Sending whatsapp message at certain time, it has several other features too.
+Home-page: https://github.com/Ankit404butfound/awesomepy
+Author: Ankit Raj Mahapatra
+Author-email: ankitrajjitendra816@gmail.com
+License: MIT
+Download-URL: https://github.com/Ankit404butfound/awesomepy/archive/1.0.tar.gz
+Keywords: sendwhatmsg,info,playonyt,search,watch_tutorial
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyautogui
+Requires-Dist: beautifulsoup4
+Requires-Dist: wikipedia
+Requires-Dist: requests
+Requires-Dist: Pillow
+Requires-Dist: numpy
+
+![alt text](http://img.dafont.com/preview.php?text=PyWhatKit&ttf=samarkan0&ext=1&size=41&psize=l&y=52)
+
+## Project description
+
+PyWhatKit is a Python library for Sending whatsapp message at certain time, it has several other features too.
+## Download Count
+
+[![Downloads](https://pepy.tech/badge/pywhatkit/month)](https://pepy.tech/project/pywhatkit/month)
+
+## Installation
+
+`pip install pywhatkit`
+
+## Usage
+
+Import the library using the following command.
+
+`import pywhatkit`
+
+#### This will open web.whatsapp.com at 14:59:40 and message will be sent at exactly 15:00:00
+
+`pywhatkit.sendwhatmsg("+919876543210","This is a message",15,00)`
+
+#### This will give wikipedia summary about the topic using the Wikipedia API
+
+`pywhatkit.info("Python",lines=3,speak=None)`
+
+#### This will convert any given image to ASCII art, see my profile picture
+
+`pywhatkit.image_to_ascii_art(path_to_image,output_file)`
+
+#### This will convert that text to handwritten font with color combination 0,0,0 in RGB form
+
+`pywhatkit.text_to_handwriting(text,rgb=[0,0,0])`
+
+Something like this
+
+![alt text](https://qphs.fs.quoracdn.net/main-qimg-6cb9c5263774b71a7905741ece958cc9)
+
+#### This will play the first video that appears upon searching "Python" on YouTube
+
+`pywhatkit.playonyt("Python")`
+
+#### This will perform a Google search about Python
+
+`pywhatkit.search("Python")`
+
+### Some other functions
+```
+pywhatkit.showHistory()#Will show information of all the messages sent using this library
+
+pywhatkit.shutdown(time=100)#Will shutdown the system in 100 seconds
+
+pywhatkit.cancelShutdown()#Will cancel the scheduled shutdown
+
+pywhatkit.watch_tutorial_in_english/hindi()#Will open a tutorial on how to use this library on YouTube in respective language
+
+pywhatkit.help() #For more information
+```
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+MIT
+
